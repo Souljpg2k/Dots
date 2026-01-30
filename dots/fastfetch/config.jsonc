@@ -3,16 +3,16 @@
     "logo": {
         "source": "arch_small",
         "padding": {
-            "top": 3,
+            "top": 3
         },
         "color": {
-            "1": "#ffffff",
-            "2": "#ffffff"
+            "1": "white",
+            "2": "green"
         }
     },
     "display": {
         "separator": "  ->  ",
-        "color": "#ffffff"
+        "color": "white"
     },
     "modules": [
         "break",
@@ -23,24 +23,24 @@
         {
             "type": "cpu",
             "key": " 󰻠",
-            "keyColor": "#ccff9f"
+            "keyColor": "green"
         },
         {
             "type": "gpu",
             "key": " 󰢮",
-            "keyColor": "#ccff9f"
+            "keyColor": "green"
         },
         {
             "type": "memory",
             "key": " 󰑭",
-            "keyColor": "#ccff9f",
-            "format": "{#37}{1} / {2}"
+            "keyColor": "green",
+            "format": "{#white}{1} / {2}"
         },
         {
             "type": "display",
             "key": " 󰍹",
-            "keyColor": "#ccff9f",
-            "format": "{1}x{2}"
+            "keyColor": "green",
+            "format": "{#white}{1}x{2}"
         },
         {
             "type": "custom",
@@ -49,31 +49,31 @@
         {
             "type": "os",
             "key": " 󰣇",
-            "keyColor": "#ccff9f"
+            "keyColor": "green"
         },
         {
             "type": "kernel",
             "key": " 󰌽",
-            "keyColor": "#ccff9f"
+            "keyColor": "green"
         },
         {
             "type": "wm",
             "key": " 󱂬",
-            "keyColor": "#ccff9f"
+            "keyColor": "green"
         },
         {
             "type": "shell",
             "key": " 󰞷",
-            "keyColor": "#ccff9f"
+            "keyColor": "green"
         },
         {
             "type": "packages",
             "key": " 󰏖",
-            "keyColor": "#ccff9f"
+            "keyColor": "green"
         },
         {
             "type": "custom",
             "format": "└────────────────────────────────────────────┘"
-        },
+        }
     ]
 }
