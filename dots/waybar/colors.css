@@ -1,0 +1,7 @@
+@define-color white @foreground;
+@define-color black @color1;
+@define-color bg @color3;
+
+@define-color ws-btn @color4;
+@define-color ws-btn-active @color2;
+@define-color ws-btn-hover @color1;

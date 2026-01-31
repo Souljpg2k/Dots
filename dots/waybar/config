@@ -1,0 +1,39 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": [
+        "custom/kitty"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "clock"
+    ],
+    "custom/kitty": {
+        "format": "  ",
+        "tooltip": false,
+        "on-click": "kitty"
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "sort-by-number": true
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": [
+                "󰋋",
+                "󰋋",
+                "󰋋"
+            ]
+        },
+        "on-click": "pavucontrol"
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip": false
+    }
+}
