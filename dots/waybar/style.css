@@ -13,8 +13,10 @@ window#waybar {
 }
 
 
+#custom-power,
 #clock,
 #pulseaudio,
+#network,
 #workspaces,
 #custom-kitty {
     background-color: @bg;
@@ -29,6 +31,20 @@ window#waybar {
 #clock {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#clock:hover {
+    background-color: @color2;
+    color: @black;
+}
+
+#network {
+    padding-right: 15px;
+}
+
+#network:hover {
+    background-color: @color2;
+    color: @black;
 }
 
 #pulseaudio {
@@ -57,8 +73,8 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background-color: @ws-btn-active;
-    color: @black;
+    background-color: @color1;
+    color: @color4;
     min-width: 40px;
     border-radius: 20px;
 }

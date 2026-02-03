@@ -9,6 +9,7 @@
     ],
     "modules-right": [
         "pulseaudio",
+        "network",
         "clock"
     ],
     "custom/kitty": {
@@ -30,7 +31,15 @@
                 "󰋋"
             ]
         },
+        "tooltip": false,
         "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "",
+        "tooltip": false,
+        "format-disconnected": "Disconnesso 󰌙",
+        "on-click": "nm-connection-editor"
     },
     "clock": {
         "format": "{:%H:%M}",
