@@ -8,16 +8,14 @@ configuration {
     hide-scrollbar: true;
     display-drun: "🔍";
 }
-
 @theme "/dev/null"
-
 * {
     bg:          rgba(34, 34, 34, 0.7); 
-    bg-selected: #b6eaff;
-    fg:          #ffffff;
-    white:       #ffffff;
-    text-selected: #141414;
-    
+    bg-selected: #191917;
+    fg:          #000000;
+    black:        #000000;
+    text-selected: #ffffff;
+
     background-color: transparent;
     text-color:       @fg;
     font:            "JetBrainsMono Nerd Font 10";
@@ -28,14 +26,16 @@ window {
     height:           220px;
     background-color: @bg;
     border:           1px;
-    border-color:     rgba(255, 255, 255, 0.1);
+    border-color:     rgba(255, 255, 255, 0.5);
     border-radius:    10px;
     padding:          20px;
+    background-image: url('/home/art/pic/2.jpg',width);
 }
 
 mainbox {
     children: [ inputbar, listview ];
     spacing: 10px;
+    border-radius: 8px;
 }
 
 inputbar {
@@ -46,18 +46,19 @@ inputbar {
 
 prompt {
     padding: 0 10px 0 5px;
-    text-color: @white;
+    text-color: @black;
 }
 
 entry {
     placeholder: "Search";
-    placeholder-color: rgba(205, 214, 244, 0.3);
+    placeholder-color: rgba(21, 21, 21, 0.5);
 }
 
 listview {
     lines: 8;
     columns: 1;
     fixed-height: false;
+    border:        none;
 }
 
 element {
@@ -68,7 +69,7 @@ element {
 
 element selected {
     background-color: @bg-selected;
-    text-color: @white;
+    text-color: @black;
 }
 
 element-icon {
@@ -76,5 +77,5 @@ element-icon {
     padding: 0 10px 0 0;
 }
 element-text selected {
-    text-color:        @text-selected;
+    text-color:         @text-selected;
 }
