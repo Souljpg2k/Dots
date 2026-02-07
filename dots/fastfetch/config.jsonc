@@ -7,7 +7,7 @@
         },
         "color": {
             "1": "white",
-            "2": "green"
+            "2": "yellow"
         }
     },
     "display": {
@@ -23,23 +23,24 @@
         {
             "type": "cpu",
             "key": " 󰻠",
-            "keyColor": "green"
+            "keyColor": "yellow"
         },
         {
             "type": "gpu",
             "key": " 󰢮",
-            "keyColor": "green"
+            "keyColor": "yellow",
+            "format": "{#white}{1} / {2}"
         },
         {
             "type": "memory",
             "key": " 󰑭",
-            "keyColor": "green",
+            "keyColor": "yellow",
             "format": "{#white}{1} / {2}"
         },
         {
             "type": "display",
             "key": " 󰍹",
-            "keyColor": "green",
+            "keyColor": "yellow",
             "format": "{#white}{1}x{2}"
         },
         {
@@ -49,27 +50,27 @@
         {
             "type": "os",
             "key": " 󰣇",
-            "keyColor": "green"
+            "keyColor": "yellow"
         },
         {
             "type": "kernel",
             "key": " 󰌽",
-            "keyColor": "green"
+            "keyColor": "yellow"
         },
         {
             "type": "wm",
             "key": " 󱂬",
-            "keyColor": "green"
+            "keyColor": "yellow"
         },
         {
             "type": "shell",
             "key": " 󰞷",
-            "keyColor": "green"
+            "keyColor": "yellow"
         },
         {
             "type": "packages",
             "key": " 󰏖",
-            "keyColor": "green"
+            "keyColor": "yellow"
         },
         {
             "type": "custom",
