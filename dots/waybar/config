@@ -1,0 +1,49 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": [
+        "custom/kitty"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "clock"
+    ],
+    "custom/kitty": {
+        "format": " 󰣇 ",
+        "tooltip": false,
+        "on-click": "kitty"
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "sort-by-number": true
+    },
+    "pulseaudio": {
+        "format": "{icon}    {volume}%",
+        "format-icons": {
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "tooltip": false,
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "",
+        "tooltip": false,
+        "format-disconnected": "",
+        "on-click": "nm-connection-editor"
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip": false,
+        "on-click": "wlogout"
+    }
+}

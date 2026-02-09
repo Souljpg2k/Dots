@@ -1,0 +1,12 @@
+width=250
+height=100
+margin=10
+padding=15
+border-size=2
+border-radius=8
+icons=1
+max-icon-size=48
+default-timeout=5000
+background-color=#17171792
+text-color=#ffffff
+border-color=#F9B2C1

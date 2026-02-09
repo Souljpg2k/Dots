@@ -1,0 +1,81 @@
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "🔍";
+}
+@theme "/dev/null"
+* {
+    bg:          rgba(34, 34, 34, 0.7); 
+    bg-selected: #F9B2C1;
+    fg:          #000000;
+    black:        #000000;
+    text-selected: #ffffff;
+
+    background-color: transparent;
+    text-color:       @fg;
+    font:            "JetBrainsMono Nerd Font 10";
+}
+
+window {
+    width:            400px;
+    height:           220px;
+    background-color: @bg;
+    border:           2px;
+    border-color:    rgba(249, 178, 193, 0.8);
+    border-radius:    10px;
+    padding:          20px;
+    background-image: url('background.png',width);
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 10px;
+    border-radius: 8px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    border-radius: 6px;
+    padding: 5px;
+}
+
+prompt {
+    padding: 0 10px 0 5px;
+    text-color: @black;
+}
+
+entry {
+    placeholder: "Search";
+    placeholder-color: rgba(21, 21, 21, 0.5);
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    fixed-height: false;
+    border:        none;
+}
+
+element {
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+element selected {
+    background-color: @bg-selected;
+    text-color: @black;
+}
+
+element-icon {
+    size: 20px;
+    padding: 0 10px 0 0;
+}
+element-text selected {
+    text-color:         @text-selected;
+}

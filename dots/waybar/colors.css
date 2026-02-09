@@ -1,0 +1,6 @@
+@define-color white #fff;
+@define-color black #303030;
+@define-color bg #ffffff;
+@define-color bgb rgba(255, 255, 255, 0.5);
+@define-color ws-btn rgb(240, 240, 240);
+@define-color ws-btn-active #F9B2C1;

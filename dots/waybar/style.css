@@ -1,0 +1,96 @@
+@import "colors.css";
+
+* {
+    font-family: "Fira Sans Semibold", sans-serif;
+    font-weight: normal;
+    border: none;
+    font-size: 10px;
+}
+
+window#waybar {
+    background: @bgb;
+}
+
+#custom-power,
+#clock,
+#pulseaudio,
+#network,
+#workspaces,
+#custom-kitty {
+    background-color: @bg;
+    color: @black;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+#clock {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#clock:hover {
+    background-color: @ws-btn-active;
+    color: @black;
+}
+
+#network {
+    padding-right: 16px;
+    border-radius: 50%;
+}
+
+#network:hover {
+    background-color: @ws-btn-active;
+    color: @black;
+}
+
+#pulseaudio {
+    min-width: 20px;
+    margin-right: 15px;
+}
+
+#pulseaudio:hover {
+    background-color: @ws-btn-active;
+    color: @black;
+}
+
+#workspaces {
+    padding: 3px 3px;
+}
+
+#workspaces button {
+    background-color: @ws-btn;
+    border-radius: 50%;
+    color: @black;
+    padding: 0;
+    margin: 0 2px;
+    min-width: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background-color: @ws-btn-active;
+    color: @white;
+    min-width: 40px;
+    border-radius: 20px;
+}
+
+#workspaces button:hover {
+    background-color: @ws-btn-active;
+    color: @black;
+}
+
+#custom-kitty {
+    padding: 4px;
+    padding-right: 7px;
+    border-radius: 50%;
+    min-width: 2px;
+    margin-left: 10px;
+}
+
+#custom-kitty:hover {
+    background-color: @ws-btn-active;
+    color: @black;
+}
