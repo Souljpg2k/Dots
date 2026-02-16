@@ -11,9 +11,9 @@ configuration {
 @theme "/dev/null"
 * {
     bg:          rgba(34, 34, 34, 0.7); 
-    bg-selected: #F9B2C1;
+    bg-selected: rgba(197, 193, 176, 0.9);
     fg:          #000000;
-    black:        #000000;
+    black:       #000000;
     text-selected: #ffffff;
 
     background-color: transparent;
@@ -26,10 +26,10 @@ window {
     height:           220px;
     background-color: @bg;
     border:           2px;
-    border-color:    rgba(249, 178, 193, 0.8);
+    border-color:    rgba(188, 188, 188, 0.8);
     border-radius:    10px;
     padding:          20px;
-    background-image: url('background.png',width);
+    background-image: url('bg.jpg',width);
 }
 
 mainbox {
